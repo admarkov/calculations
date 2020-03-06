@@ -18,6 +18,7 @@ public:
 
     QPushButton* openLab1Btn;
     QPushButton* openLab2Btn;
+    QPushButton* openLab3Btn;
 
 private:
     Ui::MainWindow *ui;
@@ -25,5 +26,6 @@ private:
 public slots:
     void openLab1();
     void openLab2();
+    void openLab3();
 };
 #endif // MAINWINDOW_H
