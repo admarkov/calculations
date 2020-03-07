@@ -5,6 +5,7 @@
 #include "lab1.h"
 #include "lab2.h"
 #include "lab3.h"
+#include "lab4.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -28,6 +29,11 @@ MainWindow::MainWindow(QWidget *parent)
     openLab3Btn->setText("Численное дифференцирование");
     openLab3Btn->setGeometry(5, 95, 590, 40);
     connect(openLab3Btn, SIGNAL(clicked(bool)), this, SLOT(openLab3()));
+
+    openLab4Btn = new QPushButton(this);
+    openLab4Btn->setText("Интегрирование");
+    openLab4Btn->setGeometry(5, 140, 590, 40);
+    connect(openLab4Btn, SIGNAL(clicked(bool)), this, SLOT(openLab4()));
 }
 
 MainWindow::~MainWindow()
@@ -47,5 +53,10 @@ void MainWindow::openLab2() {
 
 void MainWindow::openLab3() {
     auto lab = new Lab3(this);
+    lab->show();
+}
+
+void MainWindow::openLab4() {
+    auto lab = new Lab4(this);
     lab->show();
 }

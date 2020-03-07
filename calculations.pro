@@ -19,6 +19,8 @@ SOURCES += \
     genericlab.cpp \
     lab1.cpp \
     lab2.cpp \
+    lab3.cpp \
+    lab4.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -26,6 +28,8 @@ HEADERS += \
     genericlab.h \
     lab1.h \
     lab2.h \
+    lab3.h \
+    lab4.h \
     mainwindow.h
 
 FORMS += \
