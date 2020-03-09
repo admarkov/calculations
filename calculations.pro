@@ -21,6 +21,7 @@ SOURCES += \
     lab2.cpp \
     lab3.cpp \
     lab4.cpp \
+    lab5.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -30,6 +31,7 @@ HEADERS += \
     lab2.h \
     lab3.h \
     lab4.h \
+    lab5.h \
     mainwindow.h
 
 FORMS += \

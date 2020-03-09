@@ -6,6 +6,7 @@
 #include "lab2.h"
 #include "lab3.h"
 #include "lab4.h"
+#include "lab5.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -34,6 +35,11 @@ MainWindow::MainWindow(QWidget *parent)
     openLab4Btn->setText("Интегрирование");
     openLab4Btn->setGeometry(5, 140, 590, 40);
     connect(openLab4Btn, SIGNAL(clicked(bool)), this, SLOT(openLab4()));
+
+    openLab5Btn = new QPushButton(this);
+    openLab5Btn->setText("Обусловленность задачи решения\nлинейной алгебраической системы");
+    openLab5Btn->setGeometry(5, 185, 590, 40);
+    connect(openLab5Btn, SIGNAL(clicked(bool)), this, SLOT(openLab5()));
 }
 
 MainWindow::~MainWindow()
@@ -58,5 +64,10 @@ void MainWindow::openLab3() {
 
 void MainWindow::openLab4() {
     auto lab = new Lab4(this);
+    lab->show();
+}
+
+void MainWindow::openLab5() {
+    auto lab = new Lab5(this);
     lab->show();
 }
